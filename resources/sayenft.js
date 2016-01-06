@@ -50,8 +50,7 @@
         },
         fancyText : function() { 
         var $this = this;                    
-            var word = $this.cf.words[$this.i];
-            var self = this;
+            var word = $this.cf.words[$this.i];           
             $this.changeWord(word);                
             var timeout = setTimeout(function(){
                 $this.$wc .attr('data-sit','hidden');
@@ -77,8 +76,7 @@
         },
         fancyTextTyping : function(){
             var $this = this;
-            var word = $this.cf.words[$this.i];
-            var self = this;
+            var word = $this.cf.words[$this.i];           
             var chars = word.content.split(""); 
             $this.$ctn.css({'color':word.color});
             if(!$this.reverse){
